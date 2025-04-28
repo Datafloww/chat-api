@@ -2,7 +2,7 @@ import { Pool } from "pg";
 
 // Create a database connection pool
 const pool = new Pool({
-    connectionString: "postgres://postgres:1234@df@localhost:5432/datafloww_db",
+    connectionString: process.env.DATABASE_URL,
 });
 
 /**
